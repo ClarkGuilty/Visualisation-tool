@@ -63,7 +63,9 @@ class BoxLayoutQUASARS(BoxLayout_main):
         os_def = platform.system()
         print(os_def)
         if os_def == 'Linux':
-            self.pathds9 = '/usr/local/bin/ds9'
+            self.pathds9 = '/usr/bin/ds9'
+            #self.pathds9 = '/usr/local/bin/ds9'
+            #self.pathds9 = 'ds9'
             print('If your DS9 is not in /usr/local/bin/ds9 please edit the right path')
         if os_def == 'Windows':
             self.pathds9 = 'C:\\SAOImageDS9\\ds9.exe'
